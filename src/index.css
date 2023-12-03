@@ -18,13 +18,14 @@
   --white: hsl(0, 0%, 100%);
 
 /*Typography*/
-
+  --fs-big: 3.5rem;
   --fs-reg: 1.25rem;
   --fs-sm: 0.85rem;
   --family-primary: 'Nunito Sans', sans-serif;
   --family-secondary: 'Rubik', sans-serif;
   --fw-reg: 500;
   --fw-bold: 700;
+  --fw-semiBold: 600;
 }
 
 html, body {
@@ -201,6 +202,18 @@ nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+}
+
+.hero-details h1 {
+  font-size: var(--fs-big);
+  line-height: 1;
+}
+
+.hero-details p {
+  font-size: var(--fs-reg);
+  color: var(--gray);
+  font-weight: var(--fw-semiBold);
+  margin-bottom: 2rem;
 }
 
 /*Shortener Section*/
